@@ -33,6 +33,6 @@ jobs:
         curl --upload-file ./Slicer4J.zip https://transfer.sh/Slicer4J.zip
         cd -
         cd ..
-        zip -rq DynamicSlicingCore.zip ./DynamicSlicingCore    
+        zip  -rq DynamicSlicingCore.zip ./DynamicSlicingCore    
         curl --upload-file ./DynamicSlicingCore.zip https://transfer.sh/DynamicSlicingCore.zip
         
