@@ -29,10 +29,8 @@ jobs:
         mvn -DskipTests -B package install --file pom.xml
         cd ../../Slicer4J/Slicer4J 
         mvn -DskipTests -B package install --file pom.xml
-        zip -rq Slicer4J.zip ./ 
+        cd /home/runner/work/
+        zip -rq Slicer4J.zip /home/runner/work/Slicer4J
         curl --upload-file ./Slicer4J.zip https://transfer.sh/Slicer4J.zip
-        cd -
-        cd ..
-        zip  -rq DynamicSlicingCore.zip ./DynamicSlicingCore    
-        curl --upload-file ./DynamicSlicingCore.zip https://transfer.sh/DynamicSlicingCore.zip
+     
         
